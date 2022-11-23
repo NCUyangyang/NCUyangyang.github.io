@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .waibu{
+            width: 100%;
+            overflow: hidden;
+        
+            background-color: #70747767;
+            border-bottom: 1px #ddd solid;
+
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .top{
+            overflow: hidden;
+            width: 1190px;
+            margin: 0 auto;
+        }
+        .location{
+            float: left;
+        }
+        .shortcut{
+            float:right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        body{
+            font-size: 14px;
+            color: #999;
+        }
+        .top a{
+            color: #999;
+            text-decoration: none;
+        }
+        .top a:hover{
+            color: red;
+        }
+        .shortcut .line{
+            width: 2px;
+            height: 11px;
+            background-color: #999;
+            margin: 5px 12px;
+
+        }
+        .location .city{
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px black;
+            display: none;
+        }
+        .location:hover .city{
+            display: block;
+        }
+        a.h{
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+    <div class="waibu ">
+        <div class="top " >
+            <div class="location">
+                <div class="beijin">
+                <a href="java">北京</a><!--下拉框的实现hover给父元素-->
+                </div>
+                <div class="city">a</div>
+            </div>
+            <ul class="shortcut">
+                <li><a href="">你好,请登录</a><a class="h" href="" >免费注册</a></li>
+                <li class="line"></li>
+                <li><a href="">我的订单</a></li>
+                
+                <li class="line"></li>
+                <li><a href="">我的京东</a></li>
+                <li class="line"></li>
+                <li><a href="">京东会员</a></li>
+                <li class="line"></li>
+                <li><a class="h" href="">企业采购</a></li>
+                <li class="line"></li>
+                <li><span>客户服务</span></li>
+                <li class="line"></li>
+                <li><span>网站导航</span></li>
+                <li class="line"></li>
+                
+                
+
+            </ul>
+
+</div>
+</div>
+    
+</body>
+</html>
